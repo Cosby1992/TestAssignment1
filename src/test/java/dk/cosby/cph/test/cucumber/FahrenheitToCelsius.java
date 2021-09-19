@@ -1,5 +1,6 @@
 package dk.cosby.cph.test.cucumber;
 
+import dk.cosby.cph.test.TemperatureConverter;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -20,6 +21,8 @@ public class FahrenheitToCelsius {
     @When("Converting to celsius")
     public void convertingToCelsius() {
         //TODO: Convert fahrenheit to celsius
+        actual = TemperatureConverter.fahrenheitToCelsius(fahrenheit);
+
     }
 
     @Then("the result should be {double}")
