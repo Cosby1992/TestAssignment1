@@ -1,5 +1,6 @@
 package dk.cosby.cph.test.cucumber;
 
+import dk.cosby.cph.test.RomanNumeralConverter;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -18,7 +19,7 @@ public class RomanNumeralConverterStepDefinitions {
 
     @When("converting to roman numerals")
     public void convertingToRomanNumerals() {
-        //TODO: convert arabic numeral to roman numeral
+        actual = RomanNumeralConverter.convert(arabicNumeral);
     }
 
     @Then("the result should be {string}")
