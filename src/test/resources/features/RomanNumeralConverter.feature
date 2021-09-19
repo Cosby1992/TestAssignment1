@@ -22,10 +22,17 @@
         | 25      | "XXV"          |
         | 50      | "L"            |
         | 100     | "C"            |
+        | 111     | "CXI"          |
         | 134     | "CXXXIV"       |
+        | 222     | "CCXXII"       |
+        | 333     | "CCCXXXIII"    |
         | 419     | "CDXIX"        |
+        | 444     | "CDXLIV"       |
         | 500     | "D"            |
+        | 555     | "DLV"          |
         | 558     | "DLVIII"       |
+        | 666     | "DCLXVI"       |
+        | 777     | "DCCLXXVII"    |
         | 800     | "DCCC"         |
         | 832     | "DCCCXXXII"    |
         | 888     | "DCCCLXXXVIII" |
@@ -33,5 +40,15 @@
         | 986     | "CMLXXXVI"     |
         | 999     | "CMXCIX"       |
         | 1000    | "M"            |
+        | 1111    | "MCXI"           |
         | 2000    | "MM"           |
+        | 2222    | "MMCCXXII"     |
+        | 3333    | "MMMCCCXXXIII" |
+        | 4444    | "MMMMCDXLIV"   |
+        | 5555    | "MMMMMDLV"     |
+        | 6666    | "MMMMMMDCLXVI" |
+        | 9876    | "MMMMMMMMMDCCCLXXVI"             |
+
+
+
 
