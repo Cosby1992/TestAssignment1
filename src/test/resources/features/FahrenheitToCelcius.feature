@@ -3,7 +3,7 @@
 
     The formula for converting fahrenheit to celsius is (°F − 32) × 5/9 = °C
 
-    Scenario Outline: Convert a fahrenheit to Celsius
+    Scenario Outline: Convert fahrenheit to Celsius (Normal cases)
       Given a <fahrenheit temp>
       When Converting to celsius
       Then the result should be <celsius temp>
