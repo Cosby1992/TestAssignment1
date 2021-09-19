@@ -1,8 +1,6 @@
 
   Feature: Temperature Converter
 
-    The formula for converting Fahrenheit to Celsius is (°F − 32) × 5/9 = °C
-
     Scenario Outline: Convert Fahrenheit to Celsius
       Given a <fahrenheit temp>
       When Converting to Celsius

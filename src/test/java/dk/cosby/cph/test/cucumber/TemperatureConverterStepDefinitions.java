@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
 
 /**
  * Step definitions for cucumber test cases.
- * Features are described in the file "FahrenheitToCelsius.feature" located in src/test/resources/features
+ * Features are described in the file "TemperatureConverter.feature" located in src/test/resources/features
  */
 public class TemperatureConverterStepDefinitions {
 
@@ -32,14 +32,16 @@ public class TemperatureConverterStepDefinitions {
         actual = TemperatureConverter.fahrenheitToCelsius(temp);
     }
 
+    @When("Converting to Fahrenheit")
+    public void convertingToFahrenheit() {
+        // Convert the temperature using the TemperatureConverter class
+        actual = TemperatureConverter.celsiusToFahrenheit(temp);
+    }
+
     @Then("the result should be {double}")
     public void theResultShouldBeTheConvertedTemp(double expected) {
         // Test the result
         assertEquals(expected, actual, delta);
     }
 
-    @When("Converting to Fahrenheit")
-    public void convertingToFahrenheit() {
-        actual = TemperatureConverter.celsiusToFahrenheit(temp);
-    }
 }

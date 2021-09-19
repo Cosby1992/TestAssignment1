@@ -4,6 +4,10 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
+/**
+ * Cucumber runner class, handles options and running of the tests
+ */
+
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = {"src/test/resources/features/TemperatureConverter.feature"},
