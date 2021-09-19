@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
  * Step definitions for cucumber test cases.
  * Features are described in the file "FahrenheitToCelsius.feature" located in src/test/resources/features
  */
-public class FahrenheitToCelsius {
+public class TemperatureConverterStepDefinitions {
 
     private double fahrenheit;
     private double actual;
@@ -25,7 +25,7 @@ public class FahrenheitToCelsius {
     @When("Converting to celsius")
     public void convertingToCelsius() {
         // Convert the temperature using the TemperatureConverter class
-        actual = TemperatureConverter.fahrenheitToCelsius(fahrenheit);
+        actual = dk.cosby.cph.test.TemperatureConverter.fahrenheitToCelsius(fahrenheit);
     }
 
     @Then("the result should be {double}")
