@@ -22,58 +22,59 @@ public class RomanNumeralConverter {
 
                 // Checking all cases
                 while(arabicNumeral >=  1000){ // counting M's (number of thousands)
-                        romanNumeralBuilder.append("M");
+                        romanNumeralBuilder.append('M');
                         arabicNumeral -= 1000;
                 }
-                if(arabicNumeral >=  900){ // counting CM's (number of nine hundreds)
+                if(arabicNumeral >=  900){ // adding CM's (number of nine hundreds)
                         romanNumeralBuilder.append("CM");
                         arabicNumeral -= 900;
                 }
-                if(arabicNumeral >= 500){ // counting D's (number of five hundreds)
-                        romanNumeralBuilder.append("D");
+                if(arabicNumeral >= 500){ // adding D's (number of five hundreds)
+                        romanNumeralBuilder.append('D');
                         arabicNumeral -= 500;
                 }
-                if(arabicNumeral >= 400){ // counting CD's (number of four hundreds)
+                if(arabicNumeral >= 400){ // adding CD's (number of four hundreds)
                         romanNumeralBuilder.append("CD");
                         arabicNumeral -= 400;
                 }
                 while(arabicNumeral >= 100){ // counting C's (number of hundreds)
-                        romanNumeralBuilder.append("C");
+                        romanNumeralBuilder.append('C');
                         arabicNumeral -= 100;
                 }
-                if(arabicNumeral >= 90){ // counting XC's (number of nineties)
+                if(arabicNumeral >= 90){ // adding XC's (number of nineties)
                         romanNumeralBuilder.append("XC");
                         arabicNumeral -= 90;
                 }
-                if(arabicNumeral >= 50){ // counting L's (number of fifties)
-                        romanNumeralBuilder.append("L");
+                if(arabicNumeral >= 50){ // adding L's (number of fifties)
+                        romanNumeralBuilder.append('L');
                         arabicNumeral -= 50;
                 }
-                if(arabicNumeral >= 40){ // counting XL's (number of forties)
+                if(arabicNumeral >= 40){ // adding XL's (number of forties)
                         romanNumeralBuilder.append("XL");
                         arabicNumeral -= 40;
                 }
                 while(arabicNumeral >= 10){ // counting X's (number of tens)
-                        romanNumeralBuilder.append("X");
+                        romanNumeralBuilder.append('X');
                         arabicNumeral -= 10;
                 }
-                if(arabicNumeral >= 9){ // counting IX's (number of nines)
+                if(arabicNumeral >= 9){ // adding IX's (number of nines)
                         romanNumeralBuilder.append("IX");
                         arabicNumeral -= 9;
                 }
-                if(arabicNumeral >= 5){ // counting V's (number of fives)
-                        romanNumeralBuilder.append("V");
+                if(arabicNumeral >= 5){ // adding V's (number of fives)
+                        romanNumeralBuilder.append('V');
                         arabicNumeral -= 5;
                 }
-                if(arabicNumeral >= 4){ // counting IV's (number of fours)
+                if(arabicNumeral >= 4){ // adding IV's (number of fours)
                         romanNumeralBuilder.append("IV");
                         arabicNumeral -= 4;
                 }
                 while(arabicNumeral >= 1){ // counting I's (number of ones)
-                        romanNumeralBuilder.append("I");
+                        romanNumeralBuilder.append('I');
                         arabicNumeral--;
                 }
 
+                // returning the Roman Numeral as a String
                 return romanNumeralBuilder.toString();
         }
 }
