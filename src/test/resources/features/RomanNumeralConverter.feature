@@ -54,5 +54,13 @@
       When converting to roman numerals
       Then the result should be ""
 
-
+    Scenario Outline: Convert negative Arabic numerals to Roman numerals
+      Given a negative number <integer>
+      When converting to roman numerals
+      Then the result should be <roman numeral>
+      Examples:
+        | -1      | "Roman numerals does not support negative numbers" |
+        | -10     | "Roman numerals does not support negative numbers" |
+        | -100    | "Roman numerals does not support negative numbers" |
+        | -123456 | "Roman numerals does not support negative numbers" |
 

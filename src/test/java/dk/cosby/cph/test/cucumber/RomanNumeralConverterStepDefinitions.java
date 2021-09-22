@@ -17,6 +17,11 @@ public class RomanNumeralConverterStepDefinitions {
         this.arabicNumeral = arabicNumeral;
     }
 
+    @Given("a negative number <integer>")
+    public void aNegativeNumberInteger(int arabicNumeral) {
+        this.arabicNumeral = arabicNumeral;
+    }
+
     @When("converting to roman numerals")
     public void convertingToRomanNumerals() {
         actual = RomanNumeralConverter.convert(arabicNumeral);
@@ -25,5 +30,10 @@ public class RomanNumeralConverterStepDefinitions {
     @Then("the result should be {string}")
     public void theResultShouldBeRomanNumeral(String expected) {
         assertEquals(expected, actual);
+    }
+
+    @Then("the result should be <roman numeral>")
+    public void theResultShouldBeErrorMessage(String expected) {
+
     }
 }
