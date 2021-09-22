@@ -4,6 +4,9 @@ public class RomanNumeralConverter {
 
         public static String convert(int arabicNumeral){
 
+                // Guard expression for negative numbers
+                if(arabicNumeral < 0) return "Roman numerals does not support negative numbers";
+
                 StringBuilder romanNumeralBuilder = new StringBuilder();
 
                 while(arabicNumeral >=  1000){
