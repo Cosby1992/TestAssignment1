@@ -59,6 +59,7 @@
       When converting to roman numerals
       Then the result should be <roman numeral>
       Examples:
+        | integer | roman numeral                                      |
         | -1      | "Roman numerals does not support negative numbers" |
         | -10     | "Roman numerals does not support negative numbers" |
         | -100    | "Roman numerals does not support negative numbers" |
